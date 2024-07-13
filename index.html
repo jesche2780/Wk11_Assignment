@@ -1,19 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tic-Tac-Toe</title>
-    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tic-Tac-Toe</title>
+<link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+<style>
+    #board{
+        width: 170px;
+        height: 170px;
+        margin: 0 auto
+    }
+    .cell {
+        width: 55px;
+        height: 55px;
+        border: 1px solid #000;
+        text-align: center;
+        line-height: 60px;
+        cursor: pointer;
+        float: left;
+    }
+</style>
+
+<!--Set up style within the html document for the 3x3 grid system.-->
+
 </head>
 <body>
-    <div class="container mt-3">
-   <h1>Tic-Tac-Toe!!!</h1>
-   <h2>Welcome to the Best Game for when you are Bored!</h2>
-   <div id="board" class="border"></div>
+<div class="container mt-3">
+    <h1>Tic-Tac-Toe!!!</h1>
+    <h2>The World's Favorite Game for When You Are Bored!</h2>
+    <h2 id="turn">X's turn</h2>
+    <div id="board" class="d-flex flex-wrap border"></div>
+    <button id="reset" class="btn btn-primary mt-3">Reset</button>
 </div>
-   
-    
- <script src="index.js"></script>
+<script src="node_modules/jquery/dist/jquery.min.js"></script>
+<script src="index.js"></script>
 </body>
 </html>
